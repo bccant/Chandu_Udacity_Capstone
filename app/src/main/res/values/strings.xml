@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Find My Trails</string>
+    <string name="trail_option_name">Trails near my selected location</string>
+    <string name="trail_map_name">Trails Map</string>
+    <string name="trail_google_search">Select your search location</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="error_message">
+        An error has occurred while retrieving hike options.
+    </string>
+    <string name="save_button">Saved Trails</string>
+    <string name="search_fab">Search using google</string>
+    <string name="fab_desc">Fab to open the Google Autocomplete to open the address</string>
+    <string name="spin_desc">Drop down option to select the state capitals where the trails can be found</string>
+    <string name="image_desc">Hike trail image if found</string>
+    <string name="map_fab_desc">Fab to open the Map to show the points between the selected trail and the home location</string>
+    <string name="url_desc">Link to the trail details</string>
+    <string name="trail_desc">Trail details like name</string>
+    <string name="trail_len_desc">Trail details like its length</string>
+    <string name="trail_diff_desc">Trail details like its difficulty</string>
+    <string name="trail_widget_desc">Trail details for widget</string>
+    <string name="state_image_desc">Popular images from the highlighted state</string>
+    <string name="map_fab">Open Maps</string>
+    <string name="sort_length">
+        Trail Length
+    </string>
+
+    <string name="sort_difficulty">
+        Trail Difficulty
+    </string>
+
+    <string name="sort_distance">
+        Disance from location
+    </string>
+
+    <string name="empty_db">No trails are added to the favourite list yet!</string>
+    <string name="trails_api_extractor">trails</string>
+    <string name="states_json_extractor">states</string>
+    <string name="trail_name">Name</string>
+    <string name="trail_length">Length</string>
+    <string name="trail_difficulty">Difficulty</string>
+    <string name="fav_off">Add</string>
+    <string name="fav_on">Remove</string>
+    <string name="dummy_string">
+        As she lay in her berth, staring at the shadows overhead, the rush of the wheels was in her brain, driving her deeper and deeper into circles of wakeful lucidity. The sleeping-car had sunk into its night-silence. Through the wet window-pane she watched the sudden lights, the long stretches of hurrying blackness. Now and then she turned her head and looked through the opening in the hangings at her husbands curtains across the aisle....
+She wondered restlessly if he wanted anything and if she could hear him if he called. His voice had grown very weak within the last months and it irritated him when she did not hear. This irritability, this increasing childish petulance seemed to give expression to their imperceptible estrangement. Like two faces looking at one another through a sheet of glass they were close together, almost touching, but they could not hear or feel each other: the conductivity between them was broken. She, at least, had this sense of separation, and she fancied sometimes that she saw it reflected in the look with which he supplemented his failing words. Doubtless the fault was hers. She was too impenetrably healthy to be touched by the irrelevancies of disease. Her self-reproachful tenderness was tinged with the sense of his irrationality: she had a vague feeling that there was a purpose in his helpless tyrannies. The suddenness of the change had found her so unprepared. A year ago their pulses had beat to one robust measure; both had the same prodigal confidence in an exhaustless future. Now their energies no longer kept step: hers still bounded ahead of life, preempting unclaimed regions of hope and activity, while his lagged behind, vainly struggling to overtake her.
+
+When they married, she had such arrears of living to make up: her days had been as bare as the whitewashed school-room where she forced innutritious facts upon reluctant children. His coming had broken in on the slumber of circumstance, widening the present till it became the encloser of remotest chances. But imperceptibly the horizon narrowed. Life had a grudge against her: she was never to be allowed to spread her wings.
+
+At first the doctors had said that six weeks of mild air would set him right; but when he came back this assurance was explained as having of course included a winter in a dry climate. They gave up their pretty house, storing the wedding presents and new furniture, and went to Colorado. She had hated it there from the first. Nobody knew her or cared about her; there was no one to wonder at the good match she had made, or to envy her the new dresses and the visiting-cards which were still a surprise to her. And he kept growing worse. She felt herself beset with difficulties too evasive to be fought by so direct a temperament. She still loved him, of course; but he was gradually, undefinably ceasing to be himself. The man she had married had been strong, active, gently masterful: the male whose pleasure it is to clear a way through the material obstructions of life; but now it was she who was the protector, he who must be shielded from importunities and given his drops or his beef-juice though the skies were falling. The routine of the sick-room bewildered her; this punctual administering of medicine seemed as idle as some uncomprehended religious mummery.
+
+There were moments, indeed, when warm gushes of pity swept away her instinctive resentment of his condition, when she still found his old self in his eyes as they groped for each other through the dense medium of his weakness. But these moments had grown rare. Sometimes he frightened her: his sunken expressionless face seemed that of a stranger; his voice was weak and hoarse; his thin-lipped smile a mere muscular contraction. Her hand avoided his damp soft skin, which had lost the familiar roughness of health: she caught herself furtively watching him as she might have watched a strange animal. It frightened her to feel that this was the man she loved; there were hours when to tell him what she suffered seemed the one escape from her fears. But in general she judged herself more leniently, reflecting that she had perhaps been too long alone with him, and that she would feel differently when they were at home again, surrounded by her robust and buoyant family. How she had rejoiced when the doctors at last gave their consent to his going home! She knew, of course, what the decision meant; they both knew. It meant that he was to die; but they dressed the truth in hopeful euphuisms, and at times, in the joy of preparation, she really forgot the purpose of their journey, and slipped into an eager allusion to next years plans.
+    </string>
+    <string name="appwidget_text">"My Fav Trails"</string>
+    <string name="add_widget">Add widget</string>
+    <string name="hike_info">Info</string>
+    <string-array name="state_trails">
+        <item>Please Chose your State</item>
+        <item>Montgomery, Alabama</item>
+        <item>Juneau, Alaska</item>
+        <item>Phoenix, Arizona</item>
+        <item>Little Rock, Arkansas</item>
+        <item>Sacramento, California</item>
+        <item>Denver, Colorado</item>
+        <item>Hartford, Connecticut</item>
+        <item>Dover, Delaware</item>
+        <item>Tallahassee, Florida</item>
+        <item>Atlanta, Georgia</item>
+        <item>Honolulu, Hawaii</item>
+        <item>Boise, Idaho</item>
+        <item>Springfield, Illinois</item>
+        <item>Indianapolis, Indiana</item>
+        <item>Des Moines, Iowa</item>
+        <item>Topeka, Kansas</item>
+        <item>Frankfort, Kentucky</item>
+        <item>Baton Rouge, Louisiana</item>
+        <item>Augusta, Maine</item>
+        <item>Annapolis, Maryland</item>
+        <item>Boston, Massachusetts</item>
+        <item>Lansing, Michigan</item>
+        <item>Saint Paul, Minnesota</item>
+        <item>Jackson, Mississippi</item>
+        <item>Jefferson City, Missouri</item>
+        <item>Helena, Montana</item>
+        <item>Lincoln, Nebraska</item>
+        <item>Carson City, Nevada</item>
+        <item>Concord, New Hampshire</item>
+        <item>Trenton, New Jersey</item>
+        <item>Santa Fe, New Mexico</item>
+        <item>Albany, New York</item>
+        <item>Raleigh, North Carolina</item>
+        <item>Bismarck, North Dakota</item>
+        <item>Columbus, Ohio</item>
+        <item>Oklahoma City, Oklahoma</item>
+        <item>Salem, Oregon</item>
+        <item>Harrisburg, Pennsylvania</item>
+        <item>Providence, Rhode Island</item>
+        <item>Columbia, South Carolina</item>
+        <item>Pierre, South Dakota</item>
+        <item>Nashville, Tennessee</item>
+        <item>Austin, Texas</item>
+        <item>Salt Lake City, Utah</item>
+        <item>Montpelier, Vermont</item>
+        <item>Richmond, Virginia</item>
+        <item>Olympia, Washington</item>
+        <item>Charleston, West Virginia</item>
+        <item>Madison, Wisconsin</item>
+        <item>Cheyenne, Wyoming</item>
+    </string-array>
+</resources>

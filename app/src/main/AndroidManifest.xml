@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chandu.chandu_udacity_capstone">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HikeActivity$GoogleLocationSearch"
+            android:label="@string/trail_google_search"
+            android:parentActivityName=".HikeActivity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HikeActivity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HikeActivity$ImageToMapActivity"
+            android:parentActivityName=".HikeActivity.TrailDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HikeActivity.TrailDetailActivity" />
+        </activity>
+        <activity
+            android:name=".HikeActivity$TrailDetailActivity"
+            android:parentActivityName=".HikeActivity.TrailOptionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HikeActivity.TrailOptionActivity" />
+        </activity>
+        <activity android:name=".HikeActivity$MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".HikeActivity$TrailOptionActivity"
+            android:label="@string/trail_option_name"
+            android:parentActivityName=".HikeActivity.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HikeActivity.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/Googleapi_key" />
+
+        <receiver android:name=".Widgets$TrailWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/trail_widget_provider_info" />
+        </receiver> <!-- <service android:name=".Widgets.TrailListWidgetService"/> -->
+        <service
+            android:name=".Widgets$TrailListWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+</manifest>

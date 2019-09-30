@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_grey"
+    tools:context=".HikeActivity.MainActivity">
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/saved_button"-->
+<!--                android:layout_width="180dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_marginBottom="30dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.458"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/static_spinner"-->
+<!--                android:text="@string/save_button"-->
+<!--                android:onClick="saveButtonHandler"/>-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/static_spinner"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_marginTop="550dp"-->
+<!--                android:layout_marginBottom="0dp"-->
+<!--                android:background="@android:drawable/btn_dropdown"-->
+<!--                android:theme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/place_autocomplete_fragment"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.0"-->
+<!--                />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_stateslist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/states_error_message_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/error_message"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/states_loading_indicator"
+                    android:layout_height="42dp"
+                    android:layout_width="42dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+
+    <ProgressBar
+        android:id="@+id/main_loading_indicator"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#dadada" />
+    <Spinner
+        android:id="@+id/static_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:contentDescription="@string/spin_desc"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/background"
+        android:contentDescription="@string/search_fab"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>

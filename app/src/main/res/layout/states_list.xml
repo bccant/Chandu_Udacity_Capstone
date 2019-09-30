@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/cv"
+
+        card_view:cardCornerRadius="4dp"
+        android:layout_gravity="center">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/state_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:clickable="false"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/state_image_desc" />
+            <TextView
+                android:id="@+id/state_caps"
+                android:textSize="14sp"
+                android:textStyle="italic|bold"
+                android:textAppearance="@color/colorPrimaryDark"
+                android:textColor="@color/quantum_white_100"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical|left"/>
+        </FrameLayout>
+
+        <!--This View serves asa a visual divider between list items-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="#dadada"-->
+<!--            android:layout_marginLeft="8dp"-->
+<!--            android:layout_marginRight="8dp" />-->
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

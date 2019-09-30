@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Chandu_Udacity_Capstone'

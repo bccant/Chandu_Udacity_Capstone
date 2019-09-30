@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_grey"
+    tools:context=".HikeActivity.TrailOptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="4dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginRight="8dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:id="@+id/trail_headers">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_weight="5"-->
+<!--                android:text="@string/trail_name" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="@string/trail_length" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_weight="2"-->
+<!--                android:text="@string/trail_difficulty" />-->
+
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:background="#dadada" />-->
+
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:background="#dadada" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:background="#dadada" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_forecast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/quantum_white_100"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_error_message_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/error_message"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#dadada" />
+
+</RelativeLayout>
