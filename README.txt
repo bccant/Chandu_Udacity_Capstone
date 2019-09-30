@@ -1,3 +1,4 @@
+# Chandu_Trails_UdacityCapstone
 Trailing App with the map options
 
 This was as part of my capstone project for Udacity's Android Nano degree. The app shows the list of states in the form of famous pictures from the 50 states of USA and also in the form of a drop down spinner list.
